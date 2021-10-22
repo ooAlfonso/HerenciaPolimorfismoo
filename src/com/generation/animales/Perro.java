@@ -1,6 +1,6 @@
 package com.generation.animales;
 
-public class Perro extends Animal {
+public class Perro extends Animal implements Mascotas, Mamiferos {
 
     // estos son los atributos
     private int patas;
@@ -13,10 +13,13 @@ public class Perro extends Animal {
     }
 
     //estos son métodos
+    /*
     public void jugar() {
         System.out.println("Estoy jugando");
     }
+     */
     public void ladrar() {
+
         System.out.println("Estoy ladrando");
     }
     public void morder() {
@@ -27,8 +30,34 @@ public class Perro extends Animal {
     public void comer() {
         System.out.println("Comiendo croquetas");
     }
+
+    @Override
+    public void hablar() {
+
+    }
+
     @Override
     public void respirar() {
         System.out.println("Respirando");
     }
+    @Override
+    public void jugar() {
+        System.out.println("estoy jugando :)");
+    }
+
+    @Override
+    public void gestar() {
+        System.out.println("Tiempo de dos meses");
+    }
+
+    @Override
+    public void ingestarLeche() {
+        System.out.println("Estoy tomando leche ");
+    }
+
+    @Override
+    public void movilidad() {
+        System.out.println("Puedo caminar");
+    }
+
 }
